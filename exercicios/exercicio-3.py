@@ -20,9 +20,9 @@ print(conta2)
 
 # 3. Adicione um método de classe chamado ativar_conta à classe ContaBancaria que define o atributo ativo como True. Crie uma instância da classe,
 # chame o método de classe e imprima o valor de ativo.
-    @classmethod
-    def ativar_conta(cls, conta):
-        conta._ativo = True
+@classmethod
+def ativar_conta(cls, conta):
+    conta._ativo = True
 
 conta3 = ContaBancaria("Carlos", 200)
 print(f"Antes de ativar: Conta ativa? {conta3._ativo}")
@@ -71,10 +71,10 @@ cliente3 = ClienteBanco("Vinny Neves", 40, "Rua C", "111.222.333-44", "Frontend"
 
 
 # 7. Crie um método de classe para a conta ClienteBanco.
-    @classmethod
-    def criar_conta(cls, titular, saldo_inicial):
-        conta = ContaBancariaPythonica(titular, saldo_inicial)
-        return conta
+@classmethod
+def criar_conta(cls, titular, saldo_inicial):
+    conta = ContaBancariaPythonica(titular, saldo_inicial)
+    return conta
 
 # Exemplo de uso do método de classe
 conta_cliente1 = ClienteBanco.criar_conta("Ana", 2000)
