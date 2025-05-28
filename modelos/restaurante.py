@@ -14,6 +14,9 @@ class Restaurante:
         for restaurante in Restaurante.restaurantes:
             print(f'{restaurante.nome} | {restaurante.categoria} | {restaurante.ativo}')
 
+    @property
+
+
 restaurante_praca = Restaurante('Praça', 'Gourmet')
 restaurante_pizza = Restaurante('Pizza Express', 'Italiana')
 
